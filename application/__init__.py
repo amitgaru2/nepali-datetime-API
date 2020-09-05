@@ -15,11 +15,11 @@ app = FastAPI(
 
 
 class DateResponse(BaseModel):
-    data: str = "2077-05-10"
+    data: str = str(nepali_datetime.date.today()) 
 
 
 class DatetimeResponse(BaseModel):
-    data: str = "2051-02-14 10:44:22.21234+0545"
+    data: str = str(nepali_datetime.datetime.now()) 
 
 
 @app.get("/date", response_model=DateResponse)
