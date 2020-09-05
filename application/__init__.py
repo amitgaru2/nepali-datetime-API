@@ -23,22 +23,12 @@ class DatetimeResponse(BaseModel):
 
 
 @app.get("/date", response_model=DateResponse)
-def nepali_datetime_date(input_date: str = None,
-                         input_fmt: str = Query('%Y-%m-%d', alias='input-format'),
-                         output_fmt: str = Query('%Y-%m-%d', alias='output-format')):
-    if input_date is None:
-        data = nepali_datetime.date.today()
-    else:
-        data = nepali_datetime.datetime.strptime(input_date, input_fmt)
-    return {"data": data.strftime(output_fmt)}
+def nepali_datetime_date(fmt: str = Query('%Y-%m-%d', alias='format')):
+    data = nepali_datetime.date.today()
+    return {"data": data.strftime(fmt)}
 
 
 @app.get("/datetime", response_model=DatetimeResponse)
-def nepali_datetime_datetime(input_datetime: str = None, input_date: str = None,
-                             input_fmt: str = Query('%Y-%m-%d %H:%M:%S.%f', alias='input-format'),
-                             output_fmt: str = Query('%Y-%m-%d %H:%M:%S.%f', alias='output-format')):
-    if input_datetime is None:
-        data = nepali_datetime.datetime.now()
-    else:
-        data = nepali_datetime.datetime.strptime(input_date, input_fmt)
-    return {"data": data.strftime(output_fmt)}
+def nepali_datetime_datetime(fmt: str = Query('%Y-%m-%d %H:%M:%S.%f', alias='format')):
+    data = nepali_datetime.datetime.now()
+    return {"data": data.strftime(fmt)}
