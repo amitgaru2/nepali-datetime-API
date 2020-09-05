@@ -35,8 +35,8 @@ def nepali_datetime_date(input_date: str = None,
 
 @app.get("/datetime", response_model=DatetimeResponse)
 def nepali_datetime_datetime(input_datetime: str = None, input_date: str = None,
-                             input_fmt: str = Query('%Y-%m-%d', alias='input-format'),
-                             output_fmt: str = Query('%Y-%m-%d', alias='output-format')):
+                             input_fmt: str = Query('%Y-%m-%d %H:%M:%S.%f', alias='input-format'),
+                             output_fmt: str = Query('%Y-%m-%d %H:%M:%S.%f', alias='output-format')):
     if input_datetime is None:
         data = nepali_datetime.datetime.now()
     else:
