@@ -4,6 +4,7 @@ from typing import Optional
 
 from pydantic import BaseModel
 from fastapi import FastAPI, Query
+from fastapi.middleware.cors import CORSMiddleware
 
 app = FastAPI(
     title="Nepali Datetime",
@@ -12,6 +13,7 @@ app = FastAPI(
     version="1.0.2",
     redoc_url='/',
 )
+app.add_middleware(CORSMiddleware, allow_origins=["*"])
 
 
 class DateResponse(BaseModel):
