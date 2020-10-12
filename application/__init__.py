@@ -1,7 +1,5 @@
 import nepali_datetime
 
-from typing import Optional
-
 from pydantic import BaseModel
 from fastapi import FastAPI, Query
 from fastapi.middleware.cors import CORSMiddleware
@@ -10,7 +8,7 @@ app = FastAPI(
     title="Nepali Datetime",
     description="The package similar to Python's core datetime package that operates on Bikram Sambat (B.S) "
                 "date & Nepal Time +05:45.",
-    version="1.0.2",
+    version=nepali_datetime.__version__,
     redoc_url='/',
 )
 app.add_middleware(CORSMiddleware, allow_origins=["*"])
