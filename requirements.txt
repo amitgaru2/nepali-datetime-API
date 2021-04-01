@@ -1,4 +1,4 @@
-nepali-datetime==1.0.5.1
+nepali-datetime==1.0.6
 click==7.1.2
 fastapi==0.61.1
 h11==0.9.0
