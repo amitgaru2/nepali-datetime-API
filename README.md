@@ -11,24 +11,14 @@ _The access URL for the API is http://nepali-datetime.amitgaru.me ._
 
    ```sh
    curl -X GET http://nepali-datetime.amitgaru.me/date
-   ```
-
-   Will return `json` in the format
-
-   ```json
-   { "data": "2077-06-26" }
+   # returns { "data": "2077-06-26" }
    ```
 
    Response format can be changed by
 
    ```sh
    curl -X GET "http://nepali-datetime.amitgaru.me/date?format=%d-%B-%y"
-   ```
-
-   Will return `json` in the format
-
-   ```json
-   { "data": "26-Aswin-77" }
+   # returns { "data": "26-Aswin-77" }
    ```
 
    **More about the formatting in the table described [here](https://amitgaru2.github.io/nepali-datetime/html/index.html#strftime-and-strptime-behavior).**
@@ -36,13 +26,8 @@ _The access URL for the API is http://nepali-datetime.amitgaru.me ._
 1. Similarly, to get today's Bikram Sambat Date & current Nepal Time
 
    ```sh
-    curl -X GET http://nepali-datetime.amitgaru.me/datetime
+   curl -X GET http://nepali-datetime.amitgaru.me/datetime
+   # returns { "data": "2077-06-26 01:04:46.769648" }
    ```
 
-   Will return `json` in the format
-
-   ```json
-   { "data": "2077-06-26 01:04:46.769648" }
-   ```
-
-   Formatting can be applied with same behavior as described above.
+   Formatting can be applied with same approach as described in 1.
