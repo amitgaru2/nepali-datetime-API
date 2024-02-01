@@ -30,4 +30,4 @@ _The access URL for the API is http://nepali-datetime.amitgaru.me._
    # returns { "data": "2077-06-26 01:04:46.769648" }
    ```
 
-   Formatting can be applied with same approach as described in 1.
+   Formatting can be applied with the same approach as described in 1.
