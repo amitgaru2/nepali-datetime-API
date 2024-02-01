@@ -1,4 +1,4 @@
-## Nepali Datetime API
+## Nepali Datetime Public API (Free)
 
 Public APIs to access Nepali Datetime (Bikram Sambat Date & Nepal Time) with custom formatting options. The project is
 completely based on library [`nepali_datetime`](https://github.com/amitgaru2/nepali-datetime).
