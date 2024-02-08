@@ -6,6 +6,6 @@ COPY ./project/new_requirements.txt /app
 
 RUN pip install -r new_requirements.txt
 
-ADD ./project/application /app/application
+ADD ./project/application /app
 
-CMD ["uvicorn", "application:app", "--host=0.0.0.0", "--port=8000"]
+ENTRYPOINT ["uvicorn", "main:app", "--host=0.0.0.0", "--port=8000"]
