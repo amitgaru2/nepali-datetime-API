@@ -30,8 +30,6 @@ _The API documentation URL for the API is https://nepali-datetime.amitgaru.me/do
    # returns { "data": "2077-06-26 01:04:46.769648" }
    ```
 
-   Formatting can be applied with the same approach as described in 1.
-
 1. Convert Bikram Sambat (BS) date to AD date
 
    ```sh
@@ -45,3 +43,5 @@ _The API documentation URL for the API is https://nepali-datetime.amitgaru.me/do
    curl -X 'GET' 'https://nepali-datetime.amitgaru.me/date/convert/ad-bs?ad_date=2024-02-12&format=%25Y-%25m-%25d'
    # returns { "data": "2080-10-29" }
    ```
+
+`Formatting in 2., 3., 4. can be applied with the same approach as described in 1.`
