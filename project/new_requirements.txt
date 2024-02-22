@@ -5,7 +5,7 @@ exceptiongroup==1.2.0
 fastapi==0.109.0
 h11==0.14.0
 idna==3.6
-nepali-datetime==1.0.8.1
+nepali-datetime==1.0.8.2
 pydantic==2.6.0
 pydantic_core==2.16.1
 sniffio==1.3.0
