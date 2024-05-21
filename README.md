@@ -45,3 +45,9 @@ _The APIs documentation URL is https://nepali-datetime.amitgaru.me/docs._
    ```
 
 `Formatting in 2., 3., 4. can be applied with the same approach as described in 1.`
+
+## Use cases
+1. Web pages and applications
+1. Mobile applications
+1. Desktop applications
+1. Terminals / Consoles (zsh, tmux)
